@@ -44,14 +44,16 @@ const Sidebar = () => {
     },
   ]
 
-  const toggleSidebar = () => {
-    setActiveMenu(window.location.pathname)
+  const toggleSidebar = (route: string = '') => {
+    setTimeout(() => {
+      setActiveMenu(route === '' ? window.location.pathname : route)
+    }, 500)
     setIsSideBarOpen(!isSideBarOpen)
   }
 
   const handleClickOutside = (event: MouseEvent) => {
     if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
-      setIsSideBarOpen(false);
+      setIsSideBarOpen(false)
     }
   }
 
@@ -72,7 +74,7 @@ const Sidebar = () => {
     <>
       <div className="fixed w-[100vw]">
         <button
-          onClick={toggleSidebar}
+          onClick={() => toggleSidebar('')}
           type="button" 
           className="inline-flex bg-white shadow-md items-center p-2 mt-2 ms-3 text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         >
@@ -103,7 +105,7 @@ const Sidebar = () => {
             sidebarMenu.map((item, id) => {
               return (
                 <Link key={id} href={item.route}>
-                  <div onClick={toggleSidebar} className="px-4 space-y-2 font-semibold">
+                  <div onClick={() => toggleSidebar(item.route)} className="px-4 space-y-2 font-semibold">
                     <span className={`flex items-center px-4 py-3 ${id !== 0 ? 'mt-2' : ''} rounded-lg cursor-pointer ${item.route === activeMenu ? 'text-blue-900 bg-blue-50' : 'text-gray-600 hover:bg-gray-50'}`}>
                       {item.icon}
                       <span>{item.menuText}</span>

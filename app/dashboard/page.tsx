@@ -22,15 +22,15 @@ export default function DashboardPage() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 space-y-4">
           <h3 className="text-lg font-semibold text-gray-900">Recent Bookings</h3>
-          <BookingCard avatar="https://www.shutterstock.com/image-photo/smiling-positive-attractive-asian-young-260nw-2214689007.jpg" name="Sarah Johnson" service="Premium Wash" time="2:00 PM" status="Confirmed" statusColor="bg-lime-500" />
-          <BookingCard avatar="https://www.shutterstock.com/image-photo/waist-portrait-young-smiling-handsome-260nw-1963302469.jpg" name="Mike Chen" service="Basic Wash" time="3:30 PM" status="Pending" statusColor="bg-yellow-500" />
-          <BookingCard avatar="https://www.shutterstock.com/image-photo/portrait-pretty-asian-girl-smiling-260nw-1112582156.jpg" name="Emma Wilson" service="Deluxe Detail" time="4:00 PM" status="In Progress" statusColor="bg-blue-500" />
+          <BookingCard avatar="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" name="Sarah Johnson" service="Premium Wash" time="2:00 PM" status="Confirmed" statusColor="bg-lime-500" />
+          <BookingCard avatar="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" name="Mike Chen" service="Basic Wash" time="3:30 PM" status="Pending" statusColor="bg-yellow-500" />
+          <BookingCard avatar="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" name="Emma Wilson" service="Deluxe Detail" time="4:00 PM" status="In Progress" statusColor="bg-blue-500" />
         </div>
 
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 space-y-4">
           <h3 className="text-lg font-semibold text-gray-900">Recent Reviews</h3>
-          <ReviewCard avatar="https://www.shutterstock.com/image-photo/handsome-portrait-young-asian-man-260nw-1756219022.jpg" name="David Smith" stars={<Stars count={5} />} message="Excellent service! My car looks brand new." />
-          <ReviewCard avatar="https://www.shutterstock.com/image-photo/asian-businesswoman-portrait-isolated-on-260nw-2079816676.jpg" name="Lisa Brown" stars={<Stars count={4.5} />} message="Great attention to detail. Will definitely come back!" />
+          <ReviewCard avatar="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" name="David Smith" stars={<Stars count={5} />} message="Excellent service! My car looks brand new." />
+          <ReviewCard avatar="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" name="Lisa Brown" stars={<Stars count={4.5} />} message="Great attention to detail. Will definitely come back!" />
         </div>
       </section>
 
