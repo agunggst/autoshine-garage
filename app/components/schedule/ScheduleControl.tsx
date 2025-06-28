@@ -20,9 +20,9 @@ export function ScheduleControl() {
           {/* Grup Kiri: Tombol & Navigasi Tanggal */}
           <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <div className="flex items-center space-x-2 flex-shrink-0">
-              <button className="px-3 py-2 text-sm font-semibold bg-blue-900 text-white rounded-lg cursor-pointer">Today</button>
-              <button className="px-3 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-100 rounded-lg cursor-pointer">Week</button>
-              <button className="px-3 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-100 rounded-lg cursor-pointer">Month</button>
+              <button className="px-3 py-2 text-sm font-semibold bg-blue-900 text-white rounded-lg cursor-pointer">Pit A</button>
+              <button className="px-3 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-100 rounded-lg cursor-pointer">Pit B</button>
+              <button className="px-3 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-100 rounded-lg cursor-pointer">Pit C</button>
             </div>
             
             {/* Garis pemisah, hanya terlihat di layar sm ke atas */}

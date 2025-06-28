@@ -3,8 +3,21 @@ import { ScheduleControl } from '../components/schedule/ScheduleControl';
 import { TimeSlot } from '../components/schedule/TimeSlot';
 import { BookingCard } from '../components/schedule/BookingCard';
 import { EmptySlotCard } from '../components/schedule/EmptySlotCard';
+import { useEffect } from 'react';
+import { useHeaderStore } from '@/store/headerStore';
 
 export default function SchedulePage() {
+  const { updateTitle, updateSubTitle } = useHeaderStore()
+  useEffect(() => {
+    updateTitle('Schedule Management')
+    updateSubTitle("Manage bookings and appointments")
+
+    return () => {
+      updateTitle('')
+      updateSubTitle('')
+    }
+  }, [])
+
   return (
     <main>
       <ScheduleControl />

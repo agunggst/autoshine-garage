@@ -8,8 +8,21 @@ import { ReviewCard } from '../components/cards/ReviewCard';
 import { ServiceCard } from '../components/cards/ServiceCard';
 import { QuickActionButton } from '../components/QuickActionButton';
 import { FaGear } from 'react-icons/fa6';
+import { useEffect } from 'react';
+import { useHeaderStore } from '@/store/headerStore';
 
 export default function DashboardPage() {
+  const { updateTitle, updateSubTitle } = useHeaderStore()
+  useEffect(() => {
+    updateTitle('Dashboard Overview')
+    updateSubTitle("welcome back! Here's what's happening today")
+
+    return () => {
+      updateTitle('')
+      updateSubTitle('')
+    }
+  }, [])
+
   return (
     <main className="space-y-10">
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
