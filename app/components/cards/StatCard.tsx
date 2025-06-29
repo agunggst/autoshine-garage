@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export type StatCardProps = {
   label: string;
-  value: string;
+  value: ReactNode;
   icon: ReactNode;
   bgColor: string;
   iconColor: string;
