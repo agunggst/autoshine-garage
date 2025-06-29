@@ -37,11 +37,11 @@ const Sidebar = () => {
       icon: <FaStar className="mr-3 font-bold"/>,
       route: '/reviews'
     },
-    {
-      menuText: 'Settings',
-      icon: <FaGear className="mr-3 font-bold"/>,
-      route: '/settings'
-    },
+    // {
+    //   menuText: 'Settings',
+    //   icon: <FaGear className="mr-3 font-bold"/>,
+    //   route: '/settings'
+    // },
   ]
 
   const toggleSidebar = (route: string = '') => {
