@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
-import { FaCar, FaChartLine, FaGear, FaGears, FaUsers } from "react-icons/fa6"
+import { FaCar, FaChartBar, FaChartLine, FaGear, FaGears, FaUsers } from "react-icons/fa6"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { FaCalendarAlt, FaStar } from "react-icons/fa"
 
@@ -31,6 +31,11 @@ const Sidebar = () => {
       menuText: 'Customers',
       icon: <FaUsers className="mr-3 font-bold"/>,
       route: '/customers'
+    },
+    {
+      menuText: 'Reports',
+      icon: <FaChartBar className="mr-3 font-bold"/>,
+      route: '/reports'
     },
     {
       menuText: 'Reviews',
