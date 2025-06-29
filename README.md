@@ -57,24 +57,12 @@ store/                  # Zustand store configs
 
 #### Mobile Screens
 
-| Mobile 1                           | Mobile 2                           |
-| ---------------------------------- | ---------------------------------- |
-| ![](./preview_images/mobile_1.png) | ![](./preview_images/mobile_2.png) |
-
-
-<h4>💻 Desktop Screens</h4>
 <p>
-  <img src="./preview_images/dashboard.png" height="200" />
-  <img src="./preview_images/customers.png" height="200" />
-  <img src="./preview_images/services.png" height="200" />
+  <img src="./preview_images/mobile_1.png" height="300" />
+  <img src="./preview_images/mobile_2.png" height="300" />
+  <img src="./preview_images/mobile_3.png" height="300" />
 </p>
 
-<h4>📱 Mobile Screens</h4>
-<p>
-  <img src="./preview_images/mobile_1.png" height="200" />
-  <img src="./preview_images/mobile_2.png" height="200" />
-  <img src="./preview_images/schedule.png" height="200" />
-</p>
 
 ---
 
