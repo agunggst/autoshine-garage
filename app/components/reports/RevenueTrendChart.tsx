@@ -40,8 +40,8 @@ export default function RevenueTrendChart() {
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="month" />
-            <YAxis tickFormatter={(v) => `$${v.toLocaleString()}`} />
+            <XAxis dataKey="month" tick={{ fontSize: 12, fill: '#4B5563' }} />
+            <YAxis tickFormatter={(v) => `$${v.toLocaleString()}`} tick={{ fontSize: 12, fill: '#4B5563' }} />
             <Tooltip formatter={(value) => `$${Number(value).toLocaleString()}`} />
             <Area type="monotone" dataKey="revenue" stroke="#1d3b89" fill="#1d3b89" strokeWidth={3} fillOpacity={0.1} />
             <Line type="monotone" dataKey="revenue" stroke="#1d3b89" strokeWidth={3} dot={{ r: 3 }} />
