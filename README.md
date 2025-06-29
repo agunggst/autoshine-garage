@@ -3,7 +3,7 @@
 The **AutoShine Garage Dashboard** is an admin interface designed to efficiently manage car salon booking services. This is a **UI preview only** and is **not connected to any backend or database**.
 Built using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Zustand** for state management.
 
-> ✅ Deployed on [Vercel](https://autoshine-dashboard.vercel.app)
+> ✅ Deployed on [Vercel](https://autoshine-dashboard.vercel.app) <br>
 > ❌ Not connected to backend or database
 
 > 📚 This project was created as a **learning exercise** for mastering **Next.js App Router** and **Zustand**.
@@ -46,15 +46,15 @@ store/                  # Zustand store configs
 
 #### Desktop Screens
 
-| Dashboard                           | Customers                           | Services                           |
+| Dashboard                           | Customers                           | Schedule                           |
 | ----------------------------------- | ----------------------------------- | ---------------------------------- |
-| ![](./preview_images/dashboard.png) | ![](./preview_images/customers.png) | ![](./preview_images/services.png) |
+| ![](./preview_images/dashboard.png) | ![](./preview_images/customers.png) | ![](./preview_images/schedule.png) |
 
 #### Mobile Screens
 
-| Mobile 1                           | Mobile 2                           | Schedule                           |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| ![](./preview_images/mobile_1.png) | ![](./preview_images/mobile_2.png) | ![](./preview_images/schedule.png) |
+| Mobile 1                           | Mobile 2                           |
+| ---------------------------------- | ---------------------------------- |
+| ![](./preview_images/mobile_1.png) | ![](./preview_images/mobile_2.png) |
 
 ---
 
