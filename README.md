@@ -50,9 +50,9 @@ store/                  # Zustand store configs
 | ----------------------------------- | ----------------------------------- | ---------------------------------- |
 | ![](./preview_images/dashboard.png) | ![](./preview_images/customers.png) | ![](./preview_images/schedule.png) |
 
-| Services                            | Reviews                             |
-| ----------------------------------- | ----------------------------------- |
-| ![](./preview_images/services.png)  | ![](./preview_images/reviews.png)   |
+| Services                            | Reviews                             | Analytics                          |
+| ----------------------------------- | ----------------------------------- | ---------------------------------- |
+| ![](./preview_images/services.png)  | ![](./preview_images/reviews.png)   | ![](./preview_images/reports.png) |
 
 
 #### Mobile Screens
