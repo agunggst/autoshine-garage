@@ -28,6 +28,7 @@ app/
 ├── components/         # UI Components (Cards, Tables, Buttons, etc.)
 ├── customers/          # Customer management UI
 ├── dashboard/          # Dashboard overview UI
+├── reports/            # Reports & Analytics UI
 ├── reviews/            # Customer review management
 ├── schedule/           # Booking schedule section (UI only)
 ├── services/           # Salon service listing and editor (UI only)
