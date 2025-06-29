@@ -25,14 +25,14 @@ export default function DashboardPage() {
 
   return (
     <main className="space-y-10">
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
         <MetricCard title="Today's Bookings" value="24" icon={<FaCalendarCheck />} percentage="+12%" description="from yesterday" iconBgClass="bg-blue-900/10" iconTextClass="text-blue-900" />
         <MetricCard title="Total Earnings" value="$3,420" icon={<FaDollarSign />} percentage="+8%" description="from last week" iconBgClass="bg-lime-500/10" iconTextClass="text-lime-500" />
         <MetricCard title="Active Customers" value="156" icon={<FaUsers />} percentage="+15%" description="this month" iconBgClass="bg-cyan-500/10" iconTextClass="text-cyan-500" />
         <MetricCard title="Avg Rating" value="4.8" icon={<FaStar />} percentage="+0.2" description="from last month" iconBgClass="bg-yellow-100" iconTextClass="text-yellow-500" />
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 space-y-4">
           <h3 className="text-lg font-semibold text-gray-900">Recent Bookings</h3>
           <BookingCard avatar="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" name="Sarah Johnson" service="Premium Wash" time="2:00 PM" status="Confirmed" statusColor="bg-lime-500" />
@@ -47,7 +47,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-6">Service Performance</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <ServiceCard icon={<FaWater />} iconBgClass="bg-blue-800/10" title="Basic Wash" subtitle="45 bookings this week" iconTextClass="text-blue-800" progressColor="bg-blue-800" progress={75} />

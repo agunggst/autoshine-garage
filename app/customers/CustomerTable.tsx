@@ -103,7 +103,7 @@ export function CustomerTable({ title = 'Customer Directory', customers, onView,
               key={page}
               onClick={() => setCurrentPage(page)}
               className={`px-3 py-1 rounded-md text-sm font-semibold ${
-                currentPage === page ? 'bg-blue-900 text-white' : 'text-gray-600 hover:bg-gray-100'
+                currentPage === page ? 'bg-blue-900 text-white' : 'text-gray-600 hover:bg-gray-100 cursor-pointer'
               }`}
             >
               {page}
