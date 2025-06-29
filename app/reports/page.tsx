@@ -7,6 +7,8 @@ import TopPerformingServices, { Service }from '../components/reports/TopPerformi
 import CustomerInsightsProgress, { Insight } from '../components/reports/CustomerInsightsProgress';
 import MonthlyPerformanceSummary, { MonthlySummary } from '../components/reports/MonthlyPerformanceSummary';
 import { FaGem, FaCar, FaSprayCan } from 'react-icons/fa';
+import RevenueTrendChart from '../components/reports/RevenueTrendChart';
+import ServiceDistributionChart from '../components/reports/ServiceDistributionChart';
 
 const topServices: Service[] = [
   {
@@ -90,6 +92,10 @@ export default function Reports () {
         <MetricCard title="Total Bookings" value="342" icon={<FaCalendarCheck />} percentage="+12.5%" description="vs last month" iconBgClass="bg-blue-900/10" iconTextClass="text-blue-900" />
         <MetricCard title="New Customers" value="89" icon={<FaUserPlus />} percentage="+25.3%" description="vs last month" iconBgClass="bg-cyan-500/10" iconTextClass="text-cyan-500" />
         <MetricCard title="Avg Order Value" value="$83.20" icon={<FaChartLine />} percentage="+25.3%" description="vs last month" iconBgClass="bg-purple-500/10" iconTextClass="text-purple-500" />
+      </section>
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <RevenueTrendChart />
+        <ServiceDistributionChart />
       </section>
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <TopPerformingServices title="Most Booked Services" services={topServices} />
